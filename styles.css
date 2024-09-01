@@ -1,0 +1,97 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 235, 216);
+    /*border:thin solid red;*/
+}
+.head {
+    height: 100vh;
+    width: 100vw;
+    text-decoration:none;
+    color:rgb(255, 159, 70);
+    text-align: center;
+}
+button {
+    border:none;
+    font-size:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 140, 33);
+    padding: 20px 30px 0px 0px;
+    cursor:pointer;
+}
+.scroll-top {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding-bottom:0px;
+}
+.scroll-top button {
+    background: none;
+    text-decoration:none;
+    padding-right:10px 30px;
+}
+.scroll-top button:hover {
+    cursor:n-resize;
+}
+.scroll-top h2{
+    background: none;
+    font-size:25px;
+    text-decoration:none;
+    border:none;
+    margin:0;
+    text-align:right;
+}
+h1 {
+    
+    font-size: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color:rgb(255, 123, 0);
+}
+h2{
+    color:rgb(59, 41, 18);
+    font-size: 25px;
+    overflow-x: scroll;
+}
+h3 {
+    color:rgb(59, 41, 18);
+    font-size: 35px;
+    padding: 50px 30px 30px 100px;
+}
+h4, .link-head a{
+    color:rgb(59, 41, 18);
+    font-size: 25px;
+    padding: 30px 75px 0px 75px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.refs a {
+    font-size: 20px;
+    padding: 0px 75px 0px 75px;
+    color:rgb(109, 36, 10);
+}
+p{
+    font-size: 20px;
+    padding: 0px 75px 0px 75px;
+    color:rgb(109, 36, 10);
+}
+#contact p{
+    color:rgb(59, 41, 18);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#education {
+    color:rgb(109, 36, 10);
+}
+.education-entry {
+    padding: 0px 75px 0px 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:15px;
+    font-size:20px;
+}
+.left, .right {
+    flex:1;
+}
+.right {
+    text-align:right;
+}
