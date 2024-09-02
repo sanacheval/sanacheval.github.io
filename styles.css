@@ -1,7 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 235, 216);
-    /*border:thin solid red;*/
 }
 .title {
     display: flex;
@@ -94,9 +93,13 @@ p{
 }
 #contact p{
     color:rgb(255, 149, 49);
-    padding-top: 100px;
     padding-bottom: 10px;
     font-size: 18px;
+}
+h5 {
+    font-size: 18px;
+    color:rgb(255, 123, 0);
+    padding: 100px 75px 0px 75px;
 }
 #education {
     color:rgb(255, 149, 49);
@@ -107,6 +110,9 @@ p{
     justify-content: space-between;
     margin-bottom:15px;
     font-size:20px;
+}
+.left {
+    color:rgb(255, 123, 0);
 }
 .left, .right {
     flex:1;
