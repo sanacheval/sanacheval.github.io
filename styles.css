@@ -8,6 +8,7 @@
 }
 button#c-scroll {
     color:rgb(255, 140, 33);
+    
     border:thin dotted orange;
     border-radius:15px;
     margin: 20px;
@@ -49,7 +50,7 @@ button#c-scroll {
     margin: 20px;
     padding: 0px 10px 0px 10px;
     font-size:30px;
-    font-family:'Times New Roman', Times, serif;
+    /*font-family:'Times New Roman', Times, serif;*/
 
     color:rgb(255, 123, 0);
 }
@@ -103,7 +104,7 @@ h2{
 h3 {
     color:rgb(255, 123, 0);
     font-size: 35px;
-    padding: 50px 30px 30px 100px;
+    padding: 100px 30px 30px 100px;
 }
 h4, .link-head a{
     
