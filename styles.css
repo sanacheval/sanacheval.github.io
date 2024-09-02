@@ -173,6 +173,9 @@ h5 {
     text-align:right;
 }
 @media screen and (max-width: 767px) {
+    .image {
+        max-width:5vw;
+    }
     h1 {
         font-size:15vw;
     }
