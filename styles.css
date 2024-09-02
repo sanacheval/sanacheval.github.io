@@ -8,7 +8,7 @@
 }
 button#c-scroll {
     color:rgb(255, 140, 33);
-    border:thin solid orange;
+    border:thin dotted orange;
     border-radius:15px;
     margin: 20px;
     padding: 0px 10px 0px 10px;
@@ -16,6 +16,7 @@ button#c-scroll {
     margin-left:70vw;
 }
 #c-scroll:hover{
+    background-color: rgb(255, 230, 206);
     color:rgb(230, 111, 0);
 }
 .title {
@@ -174,7 +175,7 @@ h5 {
 }
 @media screen and (max-width: 767px) {
     .image {
-        max-width:5vw;
+        max-width:10vw;
     }
     h1 {
         font-size:15vw;
