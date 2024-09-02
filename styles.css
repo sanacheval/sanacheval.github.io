@@ -6,6 +6,18 @@
 *:not(.scroll-top) {
     background-color: rgb(255, 235, 216);
 }
+button#c-scroll {
+    color:rgb(255, 140, 33);
+    border:thin solid orange;
+    border-radius:15px;
+    margin: 20px;
+    padding: 0px 10px 0px 10px;
+    font-size:20px;
+    margin-left:70vw;
+}
+#c-scroll:hover{
+    color:rgb(230, 111, 0);
+}
 .title {
     padding:0px;
     margin:0px;
@@ -39,10 +51,10 @@
     font-family:'Times New Roman', Times, serif;
 
     color:rgb(255, 140, 33);
-    cursor:pointer;
 }
 button:hover{
     color: rgb(230, 111, 0);
+    cursor:pointer;
 }
 .scroll-top {
     background-color: rgba(255, 235, 216, 0.595);
@@ -99,12 +111,22 @@ h4, .link-head a{
     text-decoration:none;
     font-weight:bold;
 }
-.refs a, .refs h4 {
+#about .refs a {
+    font-size: 20px;
+    padding:0px;
+    color:rgb(148, 116, 86);
+    padding: 0px 0px 0px 75px;
+    margin-right:0px;
+}
+#about .refs a:hover {
+    color:rgb(255, 123, 0);
+}
+#projects .refs a {
     font-size: 18px;
     padding: 0px 75px 0px 75px;
     color:rgb(148, 116, 86);
 }
-.refs a:hover {
+#projects .refs a:hover {
     color:rgb(255, 123, 0);
 }
 p{
@@ -112,12 +134,17 @@ p{
     padding: 0px 75px 0px 75px;
     color:rgb(148, 116, 86);
 }
+#contact h2 {
+    color:rgb(148, 116, 86);
+    font-size: 25px;
+    padding: 0px 75px 0px 75px;
+    padding-top: 100px;
+}
 #contact p {
     color:rgb(148, 116, 86);
     font-size: 18px;
 }
 #contact {
-    padding-top: 100px;
     padding-bottom: 40px;
 }
 h5 {

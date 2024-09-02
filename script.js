@@ -1,3 +1,6 @@
+document.getElementById('c-scroll').addEventListener('click', function() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
 document.getElementById('a-scroll').addEventListener('click', function() {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
 });
