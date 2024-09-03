@@ -9,7 +9,7 @@
 </head>
 <body>
 <!--front page-->
-    <button id="c-scroll" class="scroll-button">contact me</button>
+    <button id="c-scroll" class="scroll-button">contact</button>
     <div class="head" id="head">
         <div class="title">
             <img src="./icon.png" alt="flower" class="image">
@@ -48,7 +48,8 @@
             Growing up, although I loved maths, I also loved art. 
             I find creativity to be a great outlet for emotions and have always enjoyed making physical (and now digital) art. 
             I have recently been enjoying finding the intersection of computers and art. 
-            Web development has felt like a space where you can take an artistic idea and code it to life. </p>
+            Web development has felt like a space where you can take an artistic idea and code it to life. 
+            After graduating I began working on The Odin Project's course on web development. </p>
         <br>
         <!--personal links-->
         <div class="refs">
@@ -72,19 +73,30 @@
     <div id="projects">
         <h3>Projects</h3>
         <h4>Search Engine in Java</h4>
-        <p>The final project of a class focused on understanding Java was to build a search engine. The engine sorts through a provided database. I implemented crawling and indexing where the engine collected information from web pages (simulated by given databases), then ranked these results by how relevant they were (using a formula provided to calculate this) and finally gave the results of the search. </p>
+        <p>The search engine was implemented by many functions. It first crawls and indexes through all the data provided. Starting at one url, it indexes the words of that url. Using a class MyWebGraph provided by the instructor, it creates a directed graph using adjacency lists of all the urls. Thus after indexing the words of a given url, it moves to the next edge of that vertex, which is not indexed yet, and proceeds to index it. It is a recursive method. 
+            <br><br>
+            Next, the search engine ranks each page. It does this by considering whether it was cited by many other pages or whether it has links to a large number of other pages within it. A formula provided to us was used to calculate the exact page rank, seeing a page that is cited by many others as better, and one that has a large number of external links in it as worse. 
+            <br><br>
+            Finally, the search engine computes the results of a word search, taking as input a String and returning an ArrayList of urls that contain the word ordered by the ranking system from before. In order to sort the urls by rank, MergeSort is implemented and it runs in O(n*log(n)) time complexity. 
+            <br><br>
+            Below is a link to the Github repository containing the code for this search engine.
         <div class="refs">
-            <br><a href="https://github.com/sanacheval/search-engine" target="_blank">Github Repo</a><br>
+            <br><a href="https://github.com/sanacheval/search-engine" target="_blank">Code</a><br>
         </div><br>
         <h4>Simplified Scrabble in Python</h4>
-        <p>In order to create a simplified scrabble game, I created many smaller functions including ones to create a blank board, display the board, check what fits on the board, check for valid words (using a provided database) and finally computed scores to see who won.</p>
+        <p>The game works the way scrabble does. It uses many smaller functions in order to run smoothly. After being provided with a dictionary, it can run a simple scrabble board which can be played on. It checks whether words are valid or not and can compute a score at the end to see who won. 
+            <br><br>
+            Below is a link to the Github repository containing the code for the game.</p>
         <div class="refs">
-            <br><a href="https://github.com/sanacheval/scrabble-simplified" target="_blank">Github Repo</a><br>
+            <br><a href="https://github.com/sanacheval/scrabble-simplified" target="_blank">Code</a><br>
         </div><br>
         <h4>CPU in Logisim Evolution</h4>
-        <p>In a class focused on CPUs and Computer Systems, the final project was to build a CPU in a software called Logisim Evolution. The software allows you to simulate digital circuits. The CPU I built was capable of writing data to the RAM, adding and subtracting registers from each other.  </p>
+        <p>In a class focused on CPUs and Computer Systems, the final project was to build a CPU in a software called Logisim Evolution. The software allows you to simulate digital circuits. The CPU I built was capable of writing and reading data to and from the RAM, adding and subtracting registers from each other, and halting the system. It would then display the output on a 2 bit display screen. 
+        </p>
         <h4>Operating System in C</h4>
-        <p>I took a class focused on Operating Systems. As we learnt how they work, we simultaneously coded one as our class project. I was provided with a basic starter shell on which I built a running operating system in C. It has a scheduling infrastructure that runs in First Come First Serve (FCFS), Shortest Job First with Job Ageing  (SJF) and Round Robin (RR). The scheduler was multithreaded. Finally I built a paging infrastructure where I set up a backing store which would then load scripts to the frame memory when they were called to run. </p>
+        <p>I took a class focused on Operating Systems. As we learnt how they work, we simultaneously coded one as our class project. I was provided with a basic starter shell on which I built a running operating system in C. It has a scheduling infrastructure that runs in First Come First Serve (FCFS), Shortest Job First with Job Ageing  (SJF) and Round Robin (RR). The scheduler was multithreaded. Finally I built a paging infrastructure where I set up a backing store which would then load scripts to the frame memory when they were called to run. 
+            <br><br>Building an OS helped me understand how far ahead we have come since the first understanding of how it would work. It felt impossible to imagine an OS that ran as smoothly and fast as our current computers have.
+        </p>
         
         <h4>Analysis of land for Ski Resort in ArcGIS Pro</h4></span>
         <p>In a class focused on ArcGIS Pro and Geospatial Data Analysis, the final project was assessing an area for the building of a Ski Resort. Using ArcGIS Pro I analyzed the area given to check for the total snowfall, distance from roads, slope percentage, distance from protected areas, number of amenities and inhabitants at site. Using this information I drafted a report showing which location seemed most ideal according to guidelines provided to us, and providing digital maps of the data I collected. </p>
